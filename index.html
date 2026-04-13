@@ -94,22 +94,29 @@
 
         <!-- Film tab -->
         <div class="tab-panel" id="tab-film">
-          <div class="film-card">
-            <div class="film-thumb-wrap">
-              <img class="film-thumb" id="film-thumb" src="" alt="Set thumbnail" />
-              <div class="film-overlay">
-                <div class="film-play-icon">&#9654;</div>
+
+          <!-- Coach Chang source -->
+          <div class="film-source-row">
+            <div class="film-thumb-wrap" style="width:80px;height:80px;flex-shrink:0;border-radius:6px;">
+              <img class="film-thumb" id="film-thumb" src="" alt="Set thumbnail" style="border-radius:6px;" />
+              <div class="film-overlay" style="border-radius:6px;">
+                <div class="film-play-icon" style="width:32px;height:32px;font-size:12px;">&#9654;</div>
               </div>
             </div>
-            <div class="film-info">
-              <p class="film-note">Video hosted on Facebook Reels — tap to watch Coach Chang's original breakdown with game footage.</p>
+            <div class="film-source-info">
+              <span class="film-source-label">ORIGINAL BREAKDOWN</span>
+              <p class="film-note">Coach Chang's whiteboard + game footage reel.</p>
               <a class="film-link" id="film-link" href="#" target="_blank" rel="noopener">
                 Watch on Facebook &#8599;
               </a>
             </div>
           </div>
+
+          <!-- YouTube film reference embed -->
+          <div id="yt-embed-area"></div>
+
           <p class="film-disclaimer">
-            Film clips belong to Coach Chang. This site uses them as reference only. 
+            Coach Chang's content is referenced for educational purposes.
             <a href="https://www.facebook.com/people/Coach-Chang/61573852033323/" target="_blank" rel="noopener">Follow his page &#8599;</a>
           </p>
         </div>
