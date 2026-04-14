@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SetLab — Basketball Set of the Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-set">SET</span><span class="logo-lab">LAB</span>
+        <span class="logo-ep" id="ep-badge">EP. —</span>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-prev" id="btn-prev" aria-label="Previous set">&#8592; PREV</button>
+        <div class="ep-counter">
+          <span id="ep-current">—</span>
+          <span class="ep-sep">/</span>
+          <span id="ep-total">—</span>
+        </div>
+        <button class="nav-next" id="btn-next" aria-label="Next set">NEXT &#8594;</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="title-strip">
+    <div class="title-strip-inner">
+      <div class="set-meta-row">
+        <span class="meta-tag" id="meta-category">—</span>
+        <span class="meta-tag" id="meta-action">—</span>
+        <span class="meta-date" id="meta-date">—</span>
+      </div>
+      <h1 class="set-title" id="set-title">Loading…</h1>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div class="content-grid">
+      <section class="diagram-section">
+        <div class="diagram-header">
+          <span class="section-label">DIAGRAM</span>
+          <div class="phase-info">
+            <span class="phase-label" id="phase-label">—</span>
+            <div class="phase-dots" id="phase-dots"></div>
+          </div>
+        </div>
+        <div class="court-container">
+          <canvas id="court-canvas" width="520" height="340"></canvas>
+        </div>
+        <div class="diagram-controls">
+          <button class="ctrl-btn" id="btn-playpause" aria-label="Play or pause">
+            <span id="playpause-icon">&#9646;&#9646;</span>
+          </button>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="phase-counter" id="phase-counter">— / —</span>
+        </div>
+        <div class="legend-row">
+          <div class="legend-item"><span class="legend-dot" style="background:#E85D24"></span>Ball handler</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#3B8BD4"></span>Wings</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#1D9E75"></span>Bigs</div>
+          <div class="legend-item"><span class="legend-line"></span>Player route</div>
+          <div class="legend-item"><span class="legend-line legend-line-ball"></span>Pass / shot</div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="tabs">
+          <button class="tab active" data-tab="breakdown">BREAKDOWN</button>
+          <button class="tab" data-tab="film">FILM CLIP</button>
+        </div>
+
+        <div class="tab-panel active" id="tab-breakdown">
+          <p class="breakdown-text" id="breakdown-text">—</p>
+          <div class="key-concepts">
+            <div class="concept-label">KEY READS</div>
+            <div class="reads-list" id="reads-list"></div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="tab-film">
+          <div class="film-source-row">
+            <div class="film-thumb-wrap" style="width:80px;height:80px;flex-shrink:0;border-radius:6px;">
+              <img class="film-thumb" id="film-thumb" src="" alt="Set thumbnail" style="border-radius:6px;" />
+              <div class="film-overlay" style="border-radius:6px;">
+                <div class="film-play-icon" style="width:32px;height:32px;font-size:12px;">&#9654;</div>
+              </div>
+            </div>
+            <div class="film-source-info">
+              <span class="film-source-label">ORIGINAL BREAKDOWN</span>
+              <p class="film-note">Coach Chang's whiteboard + game footage reel.</p>
+              <a class="film-link" id="film-link" href="#" target="_blank" rel="noopener">
+                Watch on Facebook &#8599;
+              </a>
+            </div>
+          </div>
+
+          <div id="yt-embed-area"></div>
+
+          <p class="film-disclaimer">
+            Coach Chang's content is referenced for educational purposes.
+            <a href="https://www.facebook.com/people/Coach-Chang/61573852033323/" target="_blank" rel="noopener">Follow his page &#8599;</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="archive-strip">
+    <div class="archive-inner">
+      <span class="section-label">ARCHIVE</span>
+      <div class="archive-list" id="archive-list"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>SetLab — built by <strong>your name here</strong></span>
+      <span>Data sourced from <a href="https://www.facebook.com/people/Coach-Chang/61573852033323/" target="_blank" rel="noopener">Coach Chang</a></span>
+      <span><a href="https://github.com/yourusername/setlab" target="_blank" rel="noopener">GitHub &#8599;</a></span>
+    </div>
+  </footer>
+
+  <script src="court.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
