@@ -1,0 +1,176 @@
+[
+  {
+    "episode": 425,
+    "slug": "iverson-short-loop-deck",
+    "title": "Iverson — Short Loop",
+    "pubDate": "2026-04-13",
+    "category": "Half-court",
+    "action": "Iverson cut / catch-and-shoot",
+    "facebookUrl": "https://www.facebook.com/reel/1429176505167257/",
+    "youtubeSearch": "Iverson cut basketball set NBA",
+    "thumbnail": "",
+    "breakdown": "Deck-based version: the wing uses two screens across the top, catches on the opposite side, then curls into a quick shot. The ball no longer follows the cutter across the court; it stays with the passer until the pass window opens.",
+    "reads": ["3 cuts horizontally over the top using two screens", "4 and 5 are screen anchors, not random movers", "1 passes after the cutter clears the second screen", "The final action is a catch-and-shoot, shown by the shot arc"],
+    "players": [
+      {"id":"1","label":"1","color":"#E85D24","start":[260,220]},
+      {"id":"2","label":"2","color":"#3B8BD4","start":[86,170]},
+      {"id":"3","label":"3","color":"#3B8BD4","start":[90,80]},
+      {"id":"4","label":"4","color":"#1D9E75","start":[195,115]},
+      {"id":"5","label":"5","color":"#1D9E75","start":[325,115]}
+    ],
+    "timeline": {
+      "duration": 10400,
+      "initialBallHolder": "1",
+      "stages": [
+        {"t":0,"label":"Setup — Iverson spacing"},
+        {"t":1800,"label":"3 starts across the top"},
+        {"t":4200,"label":"3 clears the second screen"},
+        {"t":6100,"label":"1 passes to 3"},
+        {"t":7600,"label":"3 shoots off the catch"}
+      ],
+      "keyframes": {
+        "1":[{"t":0,"p":[260,220]},{"t":4200,"p":[260,220]},{"t":6100,"p":[252,205]},{"t":10400,"p":[252,205]}],
+        "2":[{"t":0,"p":[86,170]},{"t":10400,"p":[86,170]}],
+        "3":[{"t":0,"p":[90,80]},{"t":1800,"p":[135,105]},{"t":4200,"p":[250,112],"route":{"type":"poly","via":[[160,104],[195,112]]}},{"t":6100,"p":[392,122],"route":{"type":"poly","via":[[305,108],[348,112]]}},{"t":7600,"p":[405,132]},{"t":10400,"p":[405,132]}],
+        "4":[{"t":0,"p":[195,115]},{"t":2500,"p":[195,115]},{"t":5200,"p":[180,135]},{"t":10400,"p":[180,135]}],
+        "5":[{"t":0,"p":[325,115]},{"t":4200,"p":[325,115]},{"t":6500,"p":[338,135]},{"t":10400,"p":[338,135]}]
+      },
+      "ballEvents": [
+        {"type":"pass","start":6100,"end":6900,"from":"1","to":"3","route":{"type":"arc","lift":34,"side":-1}},
+        {"type":"shot","start":7900,"end":9200,"from":"3","to":"rim","route":{"type":"arc","lift":56,"side":1}}
+      ]
+    }
+  },
+  {
+    "episode": 424,
+    "slug": "chicago-flare-deck",
+    "title": "Reject — Gut Chicago — Flare",
+    "pubDate": "2026-04-10",
+    "category": "Half-court",
+    "action": "Chicago / reject / flare",
+    "facebookUrl": "https://www.facebook.com/reel/954531196993724/",
+    "youtubeSearch": "Chicago reject flare basketball action",
+    "thumbnail": "",
+    "breakdown": "Deck-based version: Chicago is pin-down into DHO. This variation rejects the handoff, attacks the gut, then uses weak-side flare spacing for the kick-out option.",
+    "reads": ["2 rises from the corner off the pin-down", "5 is the DHO station", "2 rejects/guts the handoff lane", "3 flares wide as the kick-out shooter"],
+    "players": [
+      {"id":"1","label":"1","color":"#E85D24","start":[250,218]},
+      {"id":"2","label":"2","color":"#3B8BD4","start":[95,196]},
+      {"id":"3","label":"3","color":"#3B8BD4","start":[420,152]},
+      {"id":"4","label":"4","color":"#1D9E75","start":[130,155]},
+      {"id":"5","label":"5","color":"#1D9E75","start":[250,125]}
+    ],
+    "timeline": {
+      "duration": 11200,
+      "initialBallHolder":"1",
+      "stages":[
+        {"t":0,"label":"Setup — Chicago alignment"},
+        {"t":1700,"label":"1 enters to 5"},
+        {"t":2900,"label":"2 uses pin-down"},
+        {"t":5200,"label":"2 rejects / guts the DHO"},
+        {"t":7600,"label":"3 flares wide"},
+        {"t":9000,"label":"Kick-out / shot option"}
+      ],
+      "keyframes":{
+        "1":[{"t":0,"p":[250,218]},{"t":2500,"p":[250,218]},{"t":11200,"p":[250,218]}],
+        "2":[{"t":0,"p":[95,196]},{"t":2900,"p":[132,164]},{"t":5200,"p":[248,126],"route":{"type":"poly","via":[[150,145],[205,133]]}},{"t":7600,"p":[300,86],"route":{"type":"poly","via":[[270,105]]}},{"t":11200,"p":[300,86]}],
+        "3":[{"t":0,"p":[420,152]},{"t":6200,"p":[405,152]},{"t":9000,"p":[462,192],"route":{"type":"arc","lift":28,"side":1}},{"t":11200,"p":[462,192]}],
+        "4":[{"t":0,"p":[130,155]},{"t":3200,"p":[130,155]},{"t":5200,"p":[150,170]},{"t":11200,"p":[150,170]}],
+        "5":[{"t":0,"p":[250,125]},{"t":5200,"p":[250,125]},{"t":7600,"p":[348,135]},{"t":11200,"p":[348,135]}]
+      },
+      "ballEvents":[
+        {"type":"pass","start":1500,"end":2350,"from":"1","to":"5","route":{"type":"arc","lift":22,"side":1}},
+        {"type":"handoff","start":5000,"end":5650,"from":"5","to":"2","route":{"type":"arc","lift":8,"side":-1}},
+        {"type":"pass","start":9000,"end":9800,"from":"2","to":"3","route":{"type":"arc","lift":38,"side":1}},
+        {"type":"shot","start":9900,"end":10900,"from":"3","to":"rim","route":{"type":"arc","lift":52,"side":-1}}
+      ]
+    }
+  },
+  {
+    "episode": 423,
+    "slug": "spain-deck",
+    "title": "Double Iverson — Spain",
+    "pubDate": "2026-04-09",
+    "category": "Half-court",
+    "action": "Spain pick-and-roll",
+    "facebookUrl": "https://www.facebook.com/reel/979224764440521/",
+    "youtubeSearch": "Spain pick and roll basketball action",
+    "thumbnail": "",
+    "breakdown": "Deck-based version: the ball screen happens first, the roller dives, and the shooter sets the backscreen for the roller before popping. The pass reads are now shown as either lob to 5 or pop to 3.",
+    "reads": ["5 sets the ball screen for 1", "3 back-screens the roller's defender", "5 rolls to the rim", "1 can lob to 5 or hit 3 popping out"],
+    "players": [
+      {"id":"1","label":"1","color":"#E85D24","start":[260,220]},
+      {"id":"2","label":"2","color":"#3B8BD4","start":[90,165]},
+      {"id":"3","label":"3","color":"#3B8BD4","start":[350,150]},
+      {"id":"4","label":"4","color":"#1D9E75","start":[100,95]},
+      {"id":"5","label":"5","color":"#1D9E75","start":[292,185]}
+    ],
+    "timeline": {
+      "duration": 10600,
+      "initialBallHolder":"1",
+      "stages":[
+        {"t":0,"label":"Setup — Spain alignment"},
+        {"t":2000,"label":"5 sets the ball screen"},
+        {"t":4300,"label":"1 turns the corner"},
+        {"t":6000,"label":"3 back-screens for 5"},
+        {"t":7600,"label":"5 rolls for lob"},
+        {"t":8900,"label":"Lob / finish"}
+      ],
+      "keyframes":{
+        "1":[{"t":0,"p":[260,220]},{"t":2000,"p":[260,220]},{"t":4300,"p":[218,165],"route":{"type":"arc","lift":18,"side":-1}},{"t":10600,"p":[218,165]}],
+        "2":[{"t":0,"p":[90,165]},{"t":10600,"p":[82,185]}],
+        "3":[{"t":0,"p":[350,150]},{"t":5200,"p":[300,140]},{"t":6500,"p":[285,126]},{"t":8500,"p":[380,105],"route":{"type":"arc","lift":24,"side":-1}},{"t":10600,"p":[380,105]}],
+        "4":[{"t":0,"p":[100,95]},{"t":10600,"p":[100,95]}],
+        "5":[{"t":0,"p":[292,185]},{"t":2500,"p":[245,178]},{"t":5200,"p":[250,150]},{"t":7600,"p":[260,72],"route":{"type":"poly","via":[[258,120],[260,95]]}},{"t":10600,"p":[260,72]}]
+      },
+      "ballEvents":[
+        {"type":"pass","start":8100,"end":9050,"from":"1","to":"5","route":{"type":"arc","lift":62,"side":1}},
+        {"type":"shot","start":9200,"end":10000,"from":"5","to":"rim","route":{"type":"arc","lift":24,"side":1}}
+      ]
+    }
+  },
+  {
+    "episode": 422,
+    "slug": "chicago-rip-deck",
+    "title": "Chicago — Rip",
+    "pubDate": "2026-04-08",
+    "category": "Half-court",
+    "action": "Rip cut / DHO",
+    "facebookUrl": "https://www.facebook.com/reel/1496315302140571/",
+    "youtubeSearch": "Chicago rip dribble handoff basketball",
+    "thumbnail": "",
+    "breakdown": "Deck-based version: the cutter rips under the rim, rises into the DHO, receives the ball from the elbow, then attacks or shoots. The rip route is a single continuous path so it no longer stutters under the basket.",
+    "reads": ["2 cuts under the rim first", "4 waits as the handoff station", "The ball transfers only at the DHO", "2 finishes with a drive or pull-up"],
+    "players":[
+      {"id":"1","label":"1","color":"#E85D24","start":[260,220]},
+      {"id":"2","label":"2","color":"#3B8BD4","start":[95,150]},
+      {"id":"3","label":"3","color":"#3B8BD4","start":[420,150]},
+      {"id":"4","label":"4","color":"#1D9E75","start":[195,118]},
+      {"id":"5","label":"5","color":"#1D9E75","start":[340,200]}
+    ],
+    "timeline":{
+      "duration":10400,
+      "initialBallHolder":"1",
+      "stages":[
+        {"t":0,"label":"Setup — Chicago Rip"},
+        {"t":1800,"label":"1 enters to 4"},
+        {"t":2800,"label":"2 rips under the rim"},
+        {"t":5600,"label":"2 rises to the handoff"},
+        {"t":7000,"label":"DHO from 4 to 2"},
+        {"t":8600,"label":"2 attacks / shoots"}
+      ],
+      "keyframes":{
+        "1":[{"t":0,"p":[260,220]},{"t":10400,"p":[260,220]}],
+        "2":[{"t":0,"p":[95,150]},{"t":2800,"p":[165,72],"route":{"type":"poly","via":[[122,118],[142,92]]}},{"t":5600,"p":[258,56],"route":{"type":"poly","via":[[205,58],[235,54]]}},{"t":7000,"p":[197,118],"route":{"type":"poly","via":[[232,78],[210,100]]}},{"t":8600,"p":[225,138]},{"t":10400,"p":[225,138]}],
+        "3":[{"t":0,"p":[420,150]},{"t":10400,"p":[420,150]}],
+        "4":[{"t":0,"p":[195,118]},{"t":10400,"p":[178,132]}],
+        "5":[{"t":0,"p":[340,200]},{"t":10400,"p":[318,185]}]
+      },
+      "ballEvents":[
+        {"type":"pass","start":1500,"end":2300,"from":"1","to":"4","route":{"type":"arc","lift":24,"side":-1}},
+        {"type":"handoff","start":6700,"end":7350,"from":"4","to":"2","route":{"type":"arc","lift":8,"side":1}},
+        {"type":"shot","start":8800,"end":9900,"from":"2","to":"rim","route":{"type":"arc","lift":48,"side":1}}
+      ]
+    }
+  }
+]
